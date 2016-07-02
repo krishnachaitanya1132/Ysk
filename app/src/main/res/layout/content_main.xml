@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.saikrishnachaitanya.ysk.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is"
+        android:textSize="30dp"
+        android:textColorHighlight="#d32626"
+        android:layout_marginTop="93dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f50606" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/prctxt"
+        android:layout_marginTop="26dp"
+        android:hint="Enter percentage"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/prctxt"
+        android:layout_toRightOf="@+id/prctxt"
+        android:layout_toEndOf="@+id/prctxt"
+        android:text="%"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numtxt"
+        android:layout_marginTop="89dp"
+        android:hint="Enter Number"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/prctxt"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:text="of"
+        android:textSize="30dp"
+        android:layout_below="@+id/prctxt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:id="@+id/calc"
+        android:layout_below="@+id/numtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:background="#f90707" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColorHighlight="#d32626"
+        android:layout_marginTop="43dp"
+        android:id="@+id/Anstext"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_gravity="center" />
+</RelativeLayout>
